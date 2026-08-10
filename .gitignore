@@ -1,0 +1,103 @@
+Fragmento de código
+# ==========================================
+# 1. ARCHIVOS TEMPORALES Y CACHÉ DE PYTHON
+# ==========================================
+# Archivos compilados por Python para optimizar la ejecución
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Distribuciones y builds
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+
+# ==========================================
+# 2. JUPYTER NOTEBOOKS Y COLAB
+# ==========================================
+# Puntos de guardado automático de Jupyter (muy común que ensucien el status de Git)
+.ipynb_checkpoints/
+
+# Perfiles locales de Jupyter
+.ipython/
+
+
+# ==========================================
+# 3. ENTORNOS VIRTUALES (VENV / CONDA)
+# ==========================================
+# Las carpetas donde se instalan las librerías locales no deben subirse a GitHub
+venv/
+.venv/
+env/
+.env/
+env.bak/
+venv.bak/
+ENV/
+bin/
+include/
+lib/
+
+
+# ==========================================
+# 4. CREDENCIALES Y DATOS SENSIBLES (¡CRÍTICO!)
+# ==========================================
+# Archivos de variables de entorno (donde guardas contraseñas de SQL, API Keys, etc.)
+.env
+.env.local
+.env.*.local
+*.env
+
+# Certificados y claves de acceso a servicios en la nube
+*.pem
+*.key
+*.pfx
+secrets.json
+config.json
+
+
+# ==========================================
+# 5. BASES DE DATOS LOCALES Y ARCHIVOS PESADOS (SQL / DUCKDB)
+# ==========================================
+# Archivos de bases de datos embebidas pesadas que no deben ir al repositorio
+*.db
+*.sqlite
+*.sqlite3
+*.duckdb
+
+# Logs y volcados de bases de datos SQL
+*.sql.gz
+*.dump
+
+
+# ==========================================
+# 6. CONFIGURACIÓN DEL IDE / EDITOR
+# ==========================================
+# Configuración local de Visual Studio Code
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# Configuración local de PyCharm / DataSpell / JetBrains
+.idea/
+
+# Archivos de sistema operativo (Mac y Windows)
+.DS_Store
+Thumbs.db
+ehthumbs.db
